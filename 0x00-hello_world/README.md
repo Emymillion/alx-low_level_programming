@@ -1,1 +1,1 @@
-Hello prinf
+Hello, puts
