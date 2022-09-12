@@ -1,34 +1,34 @@
 #include <stdio.h>
 
 /**
-  * main - Prints 3 combination of numbers
+  * main - Entry point
   *
-  * Return: Always (Success)
+  * Return: Always 0 (Success)
   */
 int main(void)
 {
-	int c, i, k;
+	int d = 48. a = 48, i = 48;
 
-	for (c = '0'; c <= '9'; c++)
+	while (d < 58)
 	{
-		for (i = '0'; i <= '9'; i++)
+		a = 48;
+		while (i < 58)
 		{
-			for (k = '0'; k <= '9'; k++)
+			if (d != a&& a != i && d != i && d < a && a < i)
 			{
-				if (c < i && i < k)
-				{			
-					putchar(c);
-					putchar(i);
-					putchar(k);
-					
-					if (c != '7')
-					{	
-						putchar(',');
-						putchar(' ');
-					}
+				putchar(d);
+				putchar(a);
+				putchar(i);
+				if (!(d == 55 && a == 56 && i == 57))
+				{	
+					putchar(',');
+					putchar(' ');
 				}
+				i++;
 			}
+			a++;
 		}
+		d++;
 	}
 	putchar('\n');
 
